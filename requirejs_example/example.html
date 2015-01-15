@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="css/gridstack.css" media="screen" />
 		<script>
 		require.config({
-			baseUrl: 'js',
+			'baseUrl': 'js'
 		});
 		
 		require(['jquery','gridstack'], function ($) {
@@ -34,14 +34,10 @@
 			}
 
 			.darklue { padding:20px; background: #2c3e50; color: #fff; }
-
-			.darklue hr.star-light::after {
-				background-color: #2c3e50;
-			}
 		</style>
 	</head>
 	<body>
-		<section id="demo" class="darklue">
+		<div id="demo" class="darklue">
 			<div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
 				<div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">1</div></div>
 				<div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"><div class="grid-stack-item-content">2</div></div>
@@ -55,6 +51,6 @@
 				<div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">10</div></div>
 				<div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">11</div></div>
 			</div>
-		</section>
+		</div>
 	</body>
 </html>
